@@ -5,34 +5,6 @@ git commit -m "sustenence"
 git branch -M main
 git push -u origin main
 
-<html>
-import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-
-export default function EventRegistration() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [event, setEvent] = useState("");
-  const [registered, setRegistered] = useState(false);
-  const [messages, setMessages] = useState([]);
-  const [messageInput, setMessageInput] = useState("");
-
-  const handleRegister = () => {
-    if (name && email && event) {
-      setRegistered(true);
-    }
-  };
-
-  const handleSendMessage = () => {
-    if (messageInput.trim()) {
-      setMessages([...messages, { sender: name, text: messageInput }]);
-      setMessageInput("");
-    }
-  };
-</html>
   return (
     <div className="flex justify-center items-center min-h-screen bg-purple-100">
       <Card className="w-96 bg-white shadow-lg rounded-2xl border-purple-300">
