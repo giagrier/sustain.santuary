@@ -1,4 +1,9 @@
-
+git init
+git remote add origin https://github.com/giagrier/sustain.santuary.git
+git add .
+git commit -m "sustenence"
+git branch -M main
+git push -u origin main
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
