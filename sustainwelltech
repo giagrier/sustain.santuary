@@ -4,3 +4,13 @@ git add .
 git commit -m "Initial commit"
 git branch -M main
 git push -u origin main
+export default defineConfig({
+  base: "/event-registration/",
+  plugins: [react()],
+});
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+npm install gh-pages --save-dev
+npm run deploy
